@@ -11,7 +11,7 @@ namespace RekursionUnitTest
         }
 
         [Test]
-        public void fakultaet_EingabeZahl_ErgebnissRichtig()
+        public void fakultaet_6_720()
         {
             int ergebniss = Rekursion.fakultaet(6);
 
@@ -19,27 +19,27 @@ namespace RekursionUnitTest
         }
 
         [Test]
-        public void fakultaet_EingabeNegativeZahl_ErgebnissRichtig()
+        public void fakultaet_EingabeNegativeZahl_1()
         {
             int ergebniss = Rekursion.fakultaet(-6);
 
-            Assert.AreEqual(720, ergebniss);
+            Assert.AreEqual(1, ergebniss);
         }
 
         [Test]
-        public void fibunaccis_EingabeZahl_ErgebnisRichtig()
+        public void fibonacci_6_8()
         {
-            int ergebniss = Rekursion.fibunaccis(6);
+            int ergebniss = Rekursion.fibonacci(6);
 
             Assert.AreEqual(8, ergebniss);
         }
 
         [Test]
-        public void fibunaccis_EingabeNegativZahl_ErgebnisNull()
+        public void fibunaccis_EingabeNegativZahl_1()
         {
-            int ergebniss = Rekursion.fibunaccis(-6);
+            int ergebniss = Rekursion.fibonacci(-6);
 
-            Assert.AreEqual(0, ergebniss);
+            Assert.AreEqual(1, ergebniss);
         }
     }
 }

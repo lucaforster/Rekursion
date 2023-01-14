@@ -10,29 +10,20 @@ namespace Rekursion_solution
     {
         public static int fakultaet(int number)
         {
-            if (number == 1)
+            if (number <= 1)
             {
                 return 1;
-            }
-            if (number == -1)
-            {
-                return -1;
             }
             return fakultaet(number - 1) * number;
         }
 
-        public static int fibunaccis(int number)
+        public static int fibonacci(int number)
         {
-            if (number <= 0)
-            {
-                return 0;
-            }
-           
-            if (number == 1)
+            if (number <= 1)
             {
                 return 1;
             }
-            return fibunaccis(number - 1) + fibunaccis(number - 2);
+            return fibonacci(number - 1) + fibonacci(number - 2);
         }
     }
 }
